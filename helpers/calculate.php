@@ -39,21 +39,21 @@ function percentage(array $arrays, string $shape)
 
 // function to calculate area of ​​triangle
 // with the formula 1/2 x base x height
-function ​triangle(float $base, float $height)
+function triangle(float $base, float $height)
 {
     return ($base * $height) / 2;
 }
 
 // function to calculate area of ​​a square
 // with the formula s x s
-function square(float $side): float
+function square(float $side)
 {
     return $side * $side;
 }
 
 // function to calculate area of ​​circle
 // with the formula π x r²
-function ​​circle($radius)
+function circle(float $radius)
 {
     return 3.14 * ($radius * $radius);
 }

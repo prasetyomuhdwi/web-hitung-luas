@@ -1,6 +1,6 @@
 <?php
 
-function getData($filename, $tabel = "", $id = false)
+function getData(string $filename, string $tabel = "", bool $id = false): ?array
 {
     if (file_exists($filename)) {
         $data = json_decode(file_get_contents($filename), true);
@@ -10,14 +10,14 @@ function getData($filename, $tabel = "", $id = false)
         }
 
         switch ($tabel) {
-            case 'segitiga':
-                $search = array_search($id, array_column($data, 'id_segitiga'));
+            case 'triangle':
+                $search = array_search($id, array_column($data, 'id_triangle'));
                 break;
-            case 'persegi':
-                $search = array_search($id, array_column($data, 'id_persegi'));
+            case 'square':
+                $search = array_search($id, array_column($data, 'id_square'));
                 break;
             default:
-                $search = array_search($id, array_column($data, 'id_lingkaran'));
+                $search = array_search($id, array_column($data, 'id_circle'));
                 break;
         }
 
@@ -27,7 +27,7 @@ function getData($filename, $tabel = "", $id = false)
     }
 }
 
-function save($filename, $tabel, $data)
+function save(string $filename, string $tabel, array $data): bool
 {
     try {
         $hasil = [];
