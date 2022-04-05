@@ -53,7 +53,7 @@ function square(float $side): float
 
 // function to calculate area of ​​circle
 // with the formula π x r²
-function lingkaran($radius)
+function ​​circle($radius)
 {
     return 3.14 * ($radius * $radius);
 }

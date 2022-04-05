@@ -6,13 +6,13 @@
                     <a class="nav-link fw-bold" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="segitiga.php">Segitiga</a>
+                    <a class="nav-link" href="​triangle.php">Segitiga</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="persegi.php">Persegi</a>
+                    <a class="nav-link" href="square.php">Persegi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="lingkaran.php">Lingkaran</a>
+                    <a class="nav-link " href="​​circle.php">Lingkaran</a>
                 </li>
             </ul>
         </div>

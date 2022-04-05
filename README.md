@@ -9,7 +9,7 @@ menghitung luas bangun datar segitiga, persegi, dan lingkaran.
 Dengan bayaran berupa data kunjungan siswa, perhitungan yang
 dilakukan dan tanggal aksesnya.
 
-**Syarat Aplikasi :**
+**Syarat aplikasi :**
 
 1. Harus ada beranda yang berisi total kunjungan dan 
    persentase tiap bangun datar.
