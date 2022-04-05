@@ -1,8 +1,10 @@
 <?php
 require_once '../helpers/file-storage.php';
-$filename = '../data/DataAll.txt';
-$result = getData($filename, "triangle");
+require_once '../helpers/calculate.php';
 
+$filename = '../data/DataAll.txt';
+$result = getData($filename, "triangle") ?? [];
+$triangle_total = calculateTotalOfEachshape($result, "triangle");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +47,7 @@ $result = getData($filename, "triangle");
                     <tbody>
                         <!-- PHP START HERE -->
                         <?php
-                        if (is_array($result)) {
+                        if (is_array($result) && $triangle_total != 0) {
 
                             foreach ($result as $key => $values) {
                                 if (!empty($values["id_triangle"])) {

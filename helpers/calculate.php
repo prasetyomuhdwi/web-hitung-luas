@@ -34,7 +34,7 @@ function percentage(array $arrays, string $shape)
     } else {
         $result = 0;
     }
-    return $result;
+    return $result . "%";
 }
 
 // function to calculate area of ​​triangle

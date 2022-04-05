@@ -1,8 +1,10 @@
 <?php
 require_once '../helpers/file-storage.php';
-$filename = '../data/DataAll.txt';
-$result = getData($filename, "circle");
+require_once '../helpers/calculate.php';
 
+$filename = '../data/DataAll.txt';
+$result = getData($filename, "circle") ?? [];
+$circle_total = calculateTotalOfEachshape($result, "circle");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +48,7 @@ $result = getData($filename, "circle");
 
                         <!-- PHP START HERE -->
                         <?php
-                        if (is_array($result)) {
+                        if (is_array($result) && $circle_total != 0) {
 
                             foreach ($result as $key => $values) {
 
@@ -74,7 +76,7 @@ $result = getData($filename, "circle");
                                 }
                             }
                         } else {
-                            echo "<td colspan='6' class='p-4 bg-light text-center text-danger fw-bold'>Data Tidak Ditemukan</td>";
+                            echo "<td colspan='5' class='p-4 bg-light text-center text-danger fw-bold'>Data Tidak Ditemukan</td>";
                         }
                         ?>
                         <!-- PHP END HERE -->

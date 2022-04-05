@@ -1,8 +1,10 @@
 <?php
 require_once '../helpers/file-storage.php';
-$filename = '../data/DataAll.txt';
-$result = getData($filename, "square");
+require_once '../helpers/calculate.php';
 
+$filename = '../data/DataAll.txt';
+$result = getData($filename, "square") ?? [];
+$square_total = calculateTotalOfEachshape($result, "square");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +46,7 @@ $result = getData($filename, "square");
                     <tbody>
                         <!-- PHP START HERE -->
                         <?php
-                        if (is_array($result)) {
+                        if (is_array($result) && $square_total != 0) {
 
                             foreach ($result as $key => $values) {
                                 if (!empty($values["id_square"])) {
@@ -70,7 +72,7 @@ $result = getData($filename, "square");
                                 }
                             }
                         } else {
-                            echo "<td colspan='6' class='p-4 bg-light text-center text-danger fw-bold'>Data Tidak Ditemukan</td>";
+                            echo "<td colspan='5' class='p-4 bg-light text-center text-danger fw-bold'>Data Tidak Ditemukan</td>";
                         }
                         ?>
                         <!-- PHP END HERE -->

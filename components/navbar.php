@@ -3,16 +3,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="index.php">Home</a>
+                    <a class="nav-link fw-bold" href="./index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../views/triangle.php">Segitiga</a>
+                    <a class="nav-link" href="./triangle.php">Segitiga</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../views/square.php">Persegi</a>
+                    <a class="nav-link" href="./square.php">Persegi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="../views/circle.php">Lingkaran</a>
+                    <a class="nav-link " href="./circle.php">Lingkaran</a>
                 </li>
             </ul>
         </div>
