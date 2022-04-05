@@ -1,1 +1,0 @@
-[{"id_triangle":null,"id_square":null,"id_circle":1,"student_name":"Test","base_triangle":null,"height_triangle":null,"side_square":null,"radius_circle":"3","result":28.26,"datetime":"2022-04-05 06:38:59pm"}]

@@ -3,7 +3,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="./index.php">Home</a>
+                    <a class="nav-link fw-bold" href="__DIR__/../index.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./triangle.php">Segitiga</a>

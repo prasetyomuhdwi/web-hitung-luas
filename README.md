@@ -19,11 +19,18 @@ dilakukan dan tanggal aksesnya.
 
 3. Tidak boleh menggunakan framework untuk PHP-nya, dan boleh menggunakan library tambahan untuk CSS, JS
 
+## Install & Run
+1. Pastikan memiliki php dan path-nya sudah terdaftar di environment variable
+
+2. buka terminal di folder projek ini
+
+3. ketikkan "php -S localhost:8090"
+
+4. lalu buka url "localhost:8090" di browser
+
 ## Follow me
 On [Instagram](https://www.instagram.com/prasetyomuhdwi/)
 
 ## Resource & Dependence
 * [Bootstrap v5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-* [XAMPP v3.2.4](https://www.apachefriends.org/)
-    * [Server Apache V2.0](https://www.apache.org/licenses/LICENSE-2.0)
-    * [PHP v7.4.2](https://www.php.net)
+* [PHP v7.4.2](https://www.php.net)
