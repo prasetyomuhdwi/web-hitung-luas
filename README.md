@@ -1,6 +1,6 @@
 <!-- Lang Indonesia -->
 # web-hitung-luas
-Website Menghitung Luas Bangun Datar Sederhana untuk ujian sertifikasi Junior Web Developer VSGA Kominfo
+Website Menghitung Luas Bangun Datar Sederhana untuk ujian sertifikasi Junior Web Developer VSGA Kominfo 2022
 
 ## The challenge
 Seorang guru ingin membuat website dengan 'gratis' akses untuk 
