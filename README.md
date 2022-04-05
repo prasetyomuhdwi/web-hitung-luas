@@ -19,6 +19,8 @@ dilakukan dan tanggal aksesnya.
 
 3. Tidak boleh menggunakan framework untuk PHP-nya, dan boleh menggunakan library tambahan untuk CSS, JS
 
+4. Harus bisa membuat dan mengimplementasikan desain ui/ux
+
 ## Follow me
 On [Instagram](https://www.instagram.com/prasetyomuhdwi/)
 
