@@ -1,6 +1,7 @@
 <?php
 
-// calculate the total data for each shape performed
+// function to calculate the total 
+// data for each shape performed
 function calculateTotalOfEachshape(array $arrays, string $shape)
 {
     $total = 0;
@@ -15,7 +16,8 @@ function calculateTotalOfEachshape(array $arrays, string $shape)
     return $total;
 }
 
-// calculate the percentage of data for each shape
+// function to calculate the percentage
+// of data for each shape
 function percentage(array $arrays, string $shape)
 {
     if (is_array($arrays)) {
@@ -33,4 +35,25 @@ function percentage(array $arrays, string $shape)
         $result = 0;
     }
     return $result;
+}
+
+// function to calculate area of ​​triangle
+// with the formula 1/2 x base x height
+function ​triangle(float $base, float $height)
+{
+    return ($base * $height) / 2;
+}
+
+// function to calculate area of ​​a square
+// with the formula s x s
+function square(float $side): float
+{
+    return $side * $side;
+}
+
+// function to calculate area of ​​circle
+// with the formula π x r²
+function lingkaran($radius)
+{
+    return 3.14 * ($radius * $radius);
 }
