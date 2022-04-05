@@ -62,7 +62,7 @@ $result = getData($filename, "circle");
                                                 $date = date_create($data);
                                                 echo "<td>" . date_format($date, "d/m/Y H:i") . "</td>";
                                             } else {
-                                                if ($keyData === "hasil") {
+                                                if ($keyData === "result") {
                                                     echo "<td>" . $data . " cm2</td>";
                                                 } else {
                                                     echo "<td>" . $data . "</td>";

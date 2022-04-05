@@ -1,3 +1,9 @@
+<?php
+require_once '../helpers/file-storage.php';
+$filename = '../data/DataAll.txt';
+$result = getData($filename, "square");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,10 +42,38 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class='text-center'>
-                            <td colspan='5' class='p-4 bg-light text-center 
-                            text-danger fw-bold'>Data Tidak Ditemukan</td>
-                        </tr>
+                        <!-- PHP START HERE -->
+                        <?php
+                        if (is_array($result)) {
+
+                            foreach ($result as $key => $values) {
+                                if (!empty($values["id_square"])) {
+
+                                    echo "<tr class='text-center'>";
+
+                                    foreach ($values as $keyData => $data) {
+                                        if (!empty($data)) {
+                                            if ($keyData === "datetime") {
+                                                // change the date format to day/month/year hours:minute
+                                                $date = date_create($data);
+                                                echo "<td>" . date_format($date, "d/m/Y H:i") . "</td>";
+                                            } else {
+                                                if ($keyData === "result") {
+                                                    echo "<td>" . $data . " cm2</td>";
+                                                } else {
+                                                    echo "<td>" . $data . "</td>";
+                                                }
+                                            }
+                                        }
+                                    }
+                                    echo "</tr>";
+                                }
+                            }
+                        } else {
+                            echo "<td colspan='6' class='p-4 bg-light text-center text-danger fw-bold'>Data Tidak Ditemukan</td>";
+                        }
+                        ?>
+                        <!-- PHP END HERE -->
                     </tbody>
                 </table>
             </div>
