@@ -1,6 +1,6 @@
 <!-- Lang Indonesia -->
 # web-hitung-luas
-Website Menghitung Luas Bangun Datar Sederhana
+Website Menghitung Luas Bangun Datar Sederhana untuk ujian sertifikasi Junior Web Developer VSGA Kominfo 2022
 
 ## The challenge
 Seorang guru ingin membuat website dengan 'gratis' akses untuk 
@@ -19,14 +19,16 @@ dilakukan dan tanggal aksesnya.
 
 3. Tidak boleh menggunakan framework untuk PHP-nya, dan boleh menggunakan library tambahan untuk CSS, JS
 
+4. Harus bisa membuat dan mengimplementasikan desain ui/ux
+
 ## Install & Run
-1. Pastikan memiliki php dan path-nya sudah terdaftar di environment variable
+2. Pastikan memiliki php dan path-nya sudah terdaftar di environment variable
 
-2. buka terminal di folder projek ini
+3. buka terminal di folder projek ini
 
-3. ketikkan "php -S localhost:8090"
+4. ketikkan "php -S localhost:8090"
 
-4. lalu buka url "localhost:8090" di browser
+5. lalu buka url "localhost:8090" di browser
 
 ## Follow me
 On [Instagram](https://www.instagram.com/prasetyomuhdwi/)
