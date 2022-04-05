@@ -23,7 +23,8 @@
             </div>
 
             <div class="container">
-                <a href="tambah_persegi.php" class="btn btn-primary float-end" role="button">Perhitungan Baru</a>
+                <a href="./forms/form_add_square.php" class="btn btn-primary float-end" role="button">Perhitungan
+                    Baru</a>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr class="text-center">
