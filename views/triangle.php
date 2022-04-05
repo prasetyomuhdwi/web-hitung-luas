@@ -23,7 +23,8 @@
             </div>
 
             <div class="container">
-                <a href="tambah_segitiga.php" class="btn btn-primary float-end" role="button">Perhitungan Baru</a>
+                <a href="./forms/form_add_triangle.php" class="btn btn-primary float-end" role="button">Perhitungan
+                    Baru</a>
                 <table class="table table-hover">
                     <thead>
                         <tr class="text-center">
